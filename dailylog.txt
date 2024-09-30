@@ -1,0 +1,23 @@
+monday:
+- applied mentor guidance and watched freeCodeCamp videos + reviewed openAI API docs
+  - also joined more competitions - app/web development in order to build more personal projects (as recommended by Srikar)
+  
+tuesday:
+- tried to use school macs to apply learning knowledge, but there were too many errors
+  - troubleshot these errors and tried to set up project--didn't work so decided to do it on personal laptop :(
+- emailed aspen elementary principal to see if theyd be interested in using the app/website eventually (no one responded yet... :( )
+                                                                                                        
+wednesday:
+- updated HTML code to unify theme
+- change theme color(s) bc they were ugly (yay)
+- mapped out that i wanted to use the app/website for kids and not as a general generator, but i may make a separate project altogether that 
+incorporates the generator code as well?
+                                                                                                        
+thursday n friday: 
+i was doing GWC and cs club stuff...sorry :(
+
+sunday (make-up 4 thursday and friday):
+  -created project using node.js (yay) and synced to github + made new project and stuff
+  - created js file for generator, incorporated API key and code to generate similar titles based on an input title or genre
+  -debugged js file because of runtime(?) errors but i didn't fix it
+  takeaway: i think i need to pay for the advanced API key because it said there were too many requests to process, resulting in a 429 error!
