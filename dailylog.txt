@@ -1,3 +1,25 @@
+monday (9/30):
+- see commits - tracker
+
+tuesday
+- see commits-tracker
+- researched REST APIs and how to use them to integrate frontend with backend
+
+wednesday
+- researched http protocols and how to use them
+- started drafting email back and working on portfolio
+
+thursday
+- worked on making my age incrementer thingie in portfolio and committed (see portfolio)
+
+friday
+- updated portfolio --see commits
+
+
+
+--previous weeks--
+
+
 monday:
 - applied mentor guidance and watched freeCodeCamp videos + reviewed openAI API docs
   - also joined more competitions - app/web development in order to build more personal projects (as recommended by Srikar)
