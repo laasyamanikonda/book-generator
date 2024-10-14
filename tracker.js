@@ -24,13 +24,14 @@ document.getElementById('bookForm').addEventListener('submit', function(event) {
   
     listItem.textContent = `${book.title} - Started: ${book.startDate}, Ended: ${book.endDate}, Rating: `;
     }
+    // below: to display stars instead of number
     const starsContainer = document.createElement('span');
 for (let i = 1; i<=5; i++){
 const star = document.createElement('img');
-star.src = (i <= book.rating) ? 'filled_star.png' : 'empty_star.png'; // Use appropriate star image paths
+star.src = (i <= book.rating) ? 'filledstar.png' : 'plainstar.png'; 
 star.alt = `${i} star${i > 1 ? 's' : ''}`;
-    star.style.width = '20px'; // Adjust size as needed
-    star.style.height = '20px'; // Adjust size as needed
+    star.style.width = '20px'; 
+    star.style.height = '20px'; 
     starsContainer.appendChild(star);
 }
 listItem.appendChild(starsContainer);
