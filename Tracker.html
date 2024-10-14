@@ -14,7 +14,6 @@
   <title>Hi</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-  <center>
 <p>Welcome to your own personal tracker! Use the buttons below to start tracking your books. </p>
 <div class="dropdown">
   <button class="dropbtn">Add a book!</button>
@@ -25,8 +24,17 @@
   </div>
 </div>
     
-  </center>
+<form id="bookForm">
+  <input type="text" id="bookTitle" placeholder="Book Title" required>
+  <input type="date" id="startDate" required>
+  <input type="date" id="endDate" required>
+  <input type="number" id="rating" min="1" max="5" placeholder="Rating (1-5)" required>
+  <button type="submit">Add Book</button>
+</form>
+<ul id="bookList" style="display: none;"></ul>
+<button id="toggleLibrary">My Library</button>
 
+<script src="tracker.js"></script>
 
 Click "My Library" to view your read titles. 
 <body>
