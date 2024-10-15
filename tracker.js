@@ -32,7 +32,7 @@ function addBookToList(book) {
       if (i <= book.rating) {
           star.src = 'filledstar.png'; // filled star for rated
       } else {
-          star.src = 'plainstarreal.png'; // plain star for not rated
+          star.src class='img'= 'plainstarreal.png'; // plain star for not rated
       }
       star.alt = `${i} star${i > 1 ? 's' : ''}`;
       star.style.width = '20px'; 
