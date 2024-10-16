@@ -31,12 +31,13 @@ function addBookToList(book) {
       const star = document.createElement('img');
       if (i <= book.rating) {
           star.src = 'filledstar.png'; // filled star for rated
+          star.style.width = '20px'; 
+          star.style.height = '20px'; 
       } else {
           star.src = 'plainstarreal.png'; // plain star for not rated (with better border)
-      }
+          star.style.width = '15px'; 
+          star.style.height = '15px';       }
       star.alt = `${i} star${i > 1 ? 's' : ''}`;
-      star.style.width = '20px'; 
-      star.style.height = '20px'; 
       starsContainer.appendChild(star);
   }
 
