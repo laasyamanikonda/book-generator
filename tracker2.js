@@ -30,9 +30,9 @@ function addBookToList(book) {
   for (let i = 1; i <= 5; i++) {
       const star = document.createElement('img');
       if (i <= book.rating) {
-          star.src = 'pinkstar.jpg'; // Pink star for rated
+          star.src = 'filledstar.png'; // kfijhdjdkladjsfsf
       } else {
-          star.src = 'bluestar.jpg'; // Blue star for not rated
+          star.src = 'plainstarreal.png'; // no
       }
       star.alt = `${i} star${i > 1 ? 's' : ''}`;
       star.style.width = '20px'; 
