@@ -1,7 +1,7 @@
 const axios = require('axios');
 const readline = require('readline');
 
-const OPENAI_API_KEY = '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 ';
+const OPENAI_API_KEY = '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';
 
 async function generateBookIdeas(prompt, retries = 5) {
     try {
