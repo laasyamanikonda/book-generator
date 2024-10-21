@@ -1,7 +1,8 @@
+require('dotenv').config(); // Add this line at the very top
+
 const axios = require('axios');
 const readline = require('readline');
-
-const OPENAI_API_KEY = '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';
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 async function generateBookIdeas(prompt, retries = 5) {
     try {
@@ -27,7 +28,6 @@ async function generateBookIdeas(prompt, retries = 5) {
         bookIdeas.forEach((idea, index) => {
             console.log(`${index + 1}: ${idea}`);
         });
-        // retry to avoid 429 error below...not working tho :(
     } catch (error) {
         if (error.response && error.response.status === 429 && retries > 0) {
             const waitTime = 2 ** (5 - retries) * 1000; // exp backoff(??? huh)
