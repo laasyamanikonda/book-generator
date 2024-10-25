@@ -1,7 +1,9 @@
+require('dotenv').config();
 const axios = require('axios');
 const readline = require('readline');
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+console.log("OpenAI API Key:", OPENAI_API_KEY);
 
 async function generateBookRecommendations(input, retries = 5) {
     // Modify the prompt to ask for book recommendations
