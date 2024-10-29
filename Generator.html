@@ -22,9 +22,43 @@
   <button type="submit">Get Recommendations</button>
 </form>
 
+<!-- Container for displaying results -->
 <div id="book-list"></div>
 
-<script src="generateBooks2.js"></script>
+<script>
+  document.getElementById('genre-form').addEventListener('submit', async function(event) {
+    event.preventDefault();
+    
+    const genre = document.getElementById('genre-input').value;
+    const bookList = document.getElementById('book-list');
+    bookList.innerHTML = 'Loading...';  // Show a loading message
+    
+    try {
+      const response = await fetch('/api/recommendations', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ genre }),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        bookList.innerHTML = '';
+
+        data.recommendations.forEach((recommendation, index) => {
+          const bookItem = document.createElement('p');
+          bookItem.textContent = `${index + 1}: ${recommendation}`;
+          bookList.appendChild(bookItem);
+        });
+      } else {
+        bookList.textContent = 'Failed to load recommendations.';
+      }
+    } catch (error) {
+      bookList.textContent = 'Error fetching data.';
+    }
+  });
+</script>
 
 </body>
 </html>
