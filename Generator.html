@@ -1,22 +1,30 @@
-<title>Generator</title>
-
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
 <div class="navbar">
   <a href="index.html">Home</a>
-    <a href="About.html">About</a>
-    <a href="Contact.html">Contact</a>
+  <a href="About.html">About</a>
+  <a href="Contact.html">Contact</a>
 </div>
-<p> this is technically where the generator is going to go!</p> 
+
+<p>This is technically where the generator is going to go!</p>
+
 <form id="genre-form">
   <label for="genre-input">Enter a genre:</label>
   <input type="text" id="genre-input" placeholder="e.g., Fiction" required>
   <button type="submit">Get Recommendations</button>
 </form>
 
-<!-- Container for displaying results -->
 <div id="book-list"></div>
-  <script>src="generateBooks2.js"</script>
+
+<script src="generateBooks2.js"></script>
 
 </body>
 </html>
