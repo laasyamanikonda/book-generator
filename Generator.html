@@ -1,64 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Generator</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Suggestion Tool</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file -->
 </head>
 <body>
+    <h1>Book Suggestion Tool</h1>
+    <input type="text" id="inputField" placeholder="Enter genre or book title">
+    <button id="submitBtn">Get Suggestions</button>
+    <div id="results"></div>
 
-<div class="navbar">
-  <a href="index.html">Home</a>
-  <a href="About.html">About</a>
-  <a href="Contact.html">Contact</a>
-</div>
-
-<p>This is technically where the generator is going to go!</p>
-
-<form id="genre-form">
-  <label for="genre-input">Enter a genre:</label>
-  <input type="text" id="genre-input" placeholder="e.g., Fiction" required>
-  <button type="submit">Get Recommendations</button>
-</form>
-
-<!-- Container for displaying results -->
-<div id="book-list"></div>
-
-<script>
-  document.getElementById('genre-form').addEventListener('submit', async function(event) {
-    event.preventDefault();
-    
-    const genre = document.getElementById('genre-input').value;
-    const bookList = document.getElementById('book-list');
-    bookList.innerHTML = 'Loading...';  // Show a loading message
-    
-    try {
-      const response = await fetch('/api/recommendations', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ genre }),
-      });
-
-      if (response.ok) {
-        const data = await response.json();
-        bookList.innerHTML = '';
-
-        data.recommendations.forEach((recommendation, index) => {
-          const bookItem = document.createElement('p');
-          bookItem.textContent = `${index + 1}: ${recommendation}`;
-          bookList.appendChild(bookItem);
+    <script src="generateBooks2.js"></script>
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function() {
+            const userInput = document.getElementById('inputField').value;
+            const suggestions = generateBookSuggestions(userInput); // Call your function to generate suggestions
+            document.getElementById('results').innerHTML = suggestions.join('<br>'); // Display results
         });
-      } else {
-        bookList.textContent = 'Failed to load recommendations.';
-      }
-    } catch (error) {
-      bookList.textContent = 'Error fetching data.';
-    }
-  });
-</script>
-
+    </script>
 </body>
 </html>
+
