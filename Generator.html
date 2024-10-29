@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Suggestion Tool</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="styles.css">
+=======
+    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file -->
+>>>>>>> 20fcadcd4bae0a7f74eab155c06db7f98d76edeb
 </head>
 <body>
     <h1>Book Suggestion Tool</h1>
@@ -12,6 +16,7 @@
     <button id="submitBtn">Get Suggestions</button>
     <div id="results"></div>
 
+<<<<<<< HEAD
     <script>
         document.getElementById('submitBtn').addEventListener('click', async function() {
             const userInput = document.getElementById('inputField').value;
@@ -25,7 +30,16 @@
             
             const suggestions = await response.json();
             document.getElementById('results').innerHTML = suggestions.join('<br>');
+=======
+    <script src="generateBooks2.js"></script>
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function() {
+            const userInput = document.getElementById('inputField').value;
+            const suggestions = generateBookSuggestions(userInput); // Call your function to generate suggestions
+            document.getElementById('results').innerHTML = suggestions.join('<br>'); // Display results
+>>>>>>> 20fcadcd4bae0a7f74eab155c06db7f98d76edeb
         });
     </script>
 </body>
 </html>
+
