@@ -1,7 +1,7 @@
 html {
     height: 100%;
     width: 100%;
-    background-color: #f4fee1;
+    background-color: #f89eac;
   }
   
   body {
@@ -11,7 +11,7 @@ html {
   }
   
   .navbar {
-    background-color: #96BE8C
+    background-color: #A63A50;
   ; /* Background color of the nav bar */
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@ html {
   }
   
   .navbar a {
-    color: #fff;
+    color: #F0E7D8;
     text-decoration: none;
     padding: 0.5rem 1rem;
     font-size: 1.5rem;
@@ -30,7 +30,7 @@ html {
   }
   
   .navbar a:hover {
-    background-color: #ACECA1;
+    background-color: #BF4A61;
   }
   
   .navbar a.active {
@@ -41,7 +41,7 @@ html {
     padding: 2rem;
   }
   button {
-  background-color: #629460;
+  background-color: #883041;
     color: white;
     font: Garamond;
     padding: 10px 20px;
@@ -53,7 +53,7 @@ html {
     
   }
   button:hover {
-    background-color: #96BE8C; /* change to your desired color */
+    background-color: #b68cbe; /* change to your desired color */
     color: white; /* change to your desired color */
   }
   a{
@@ -74,7 +74,7 @@ background-color: pink;
 }
 
 .dropbtn {
-  background-color: #04AA6D;
+  background-color: #0c04aa;
   color: white;
   padding: 16px;
   font-size: 16px;
