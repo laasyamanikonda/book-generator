@@ -41,7 +41,7 @@ html {
   
   .content {
     padding: 2rem;
-      background-color: #F9F9F9;
+      background-color: #f89eac;
   }
 
   button {
@@ -57,14 +57,14 @@ html {
     
   }
   button:hover {
-    background-color: #b68cbe; /* change to your desired color */
+    background-color: #A63A50; /* change to your desired color */
     color: white; /* change to your desired color */
   }
   a{
   font: Garamond;
     color: white;
     text-decoration: black;
-  background-color: #b68cbe;
+  background-color: #A63A50;
     font-size: 20px;
   }
   h1{
