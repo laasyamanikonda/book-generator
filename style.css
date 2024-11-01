@@ -79,11 +79,11 @@ background-color: pink;
 
 .img{
   position: absolute;
-    top: 20px;
+    top: 60px;
     left: 50px;
   width:100px;
   }
-  
+
   .img2{
   position: absolute;
     bottom: 50px;
